@@ -102,3 +102,18 @@ int LinkedList1::findValue(int pos)
     current = current->link;
   }
 }
+
+int LinkedList1::smallest()
+{
+  
+  Node* current = head;
+  while(current != NULL)
+  {
+    if( current->data)
+    {
+      return current->data;
+    }
+    current = current->link;
+
+  }
+}
